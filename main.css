@@ -141,10 +141,25 @@ p {
     }
 
     .wrapper {
-        margin: 0px;
+        margin: 0 auto;
     }
 
     .wrapper .box {
         width: 100%;
+    }
+
+    #website-section, #graphics-section {
+        display: inline-block;
+        height: 150%;
+    }
+    p {
+        flex-direction: none;
+        margin: 10%;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 2em;
+        margin-top: 7%;
+        margin-left: 10%;
     }
 }
