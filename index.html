@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Filter</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <ul>
+        <li class="button" data-filter="all">All</li>
+        <li class="button" data-filter="website">Website</li>
+        <li class="button" data-filter="graphics">Graphics</li>
+        <li class="button" data-filter="photography">Photography</li>
+        <li class="button" data-filter="logo">Logo</li>
+        <li class="button" data-filter="uiux">UI/UX</li>
+    </ul>
+
+    <div class="wrapper">
+        <div class="box filter website">Website</div>
+        <div class="box filter graphics">Graphics</div>
+        <div class="box filter photography">Photography</div>
+        <div class="box filter logo">Logo</div>
+        <div class="box filter uiux">UI/UX</div>
+
+        <div class="box filter website">Website</div>
+        <div class="box filter graphics">Graphics</div>
+        <div class="box filter photography">Photography</div>
+        <div class="box filter logo">Logo</div>
+        <div class="box filter uiux">UI/UX</div>
+
+        <div class="box filter website">Website</div>
+        <div class="box filter graphics">Graphics</div>
+        <div class="box filter photography">Photography</div>
+        <div class="box filter logo">Logo</div>
+        <div class="box filter uiux">UI/UX</div>
+        <div class="box filter website">Website</div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".button").click(function(){
+                var value = $(this).attr("data-filter");
+                if (value == "all"){
+                    $(".filter").show("1000");
+                }
+                else {
+                    $(".filter").not("."+value).hide("1000");
+                    $(".filter").filter("."+value).show("1000");
+                }
+                //add active class
+                $("ul .button").click(function(){
+                    $(this).addClass('active').siblings().removeClass('active');
+                })
+            })
+        })
+    </script>
+</body>
+</html>
