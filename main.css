@@ -52,6 +52,7 @@ ul li:hover, .active {
 
 }
 .wrapper {
+    height: 100%;
     padding: 0 30px;
     margin: 5px 5px 5px 200px;
     box-sizing: border-box;
@@ -89,6 +90,39 @@ ul li:hover, .active {
 .uiux {
     background-color: var(--button5);
 }
+
+#website-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--button1);
+}
+
+#graphics-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--main-black);
+}
+h1 {
+    font-size: 2em;
+    margin: 10vh 10vh 0vh 5vh;
+    color: rgba(255, 255, 255, 5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: none;
+
+}
+p {
+    flex-direction: column;
+    font-size: 1rem;
+    margin: 10vh 5vh 0 5vh;
+    color: rgba(255, 255, 255, 5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
 
 /*
 * ----------- RESPONSIVE ---------------------------------------------------------------------------
