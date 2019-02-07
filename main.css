@@ -45,10 +45,12 @@ ul li{
     margin-right: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
+    cursor: pointer;
 }
 ul li:hover, .active {
     background-color: var(--main-white);
     color: var(--accent);
+    cursor: pointer;
 
 }
 .wrapper {
